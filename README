@@ -1,0 +1,9 @@
+DESCRIPTION
+The idea of this script is to sate my desire of having all Magic The Gathering wallpapers without having to click one hundred times.
+This beta version is downloading all pictures to a "pictures" folder.
+
+USAGE
+Run ./download_wallpapers.sh
+
+CREDITS
+Myself and google.
