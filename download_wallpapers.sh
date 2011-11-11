@@ -3,7 +3,7 @@ rm -r paginas
 rm -r pictures
 mkdir paginas
 mkdir pictures
-for page_sufix in  `grep href downloads.aspx\?x\=mtg%2Fdaily%2Fdownloads%2Fwallpapers | grep /magic/magazine/article.aspx | sed 's/^.*<a href="//' | sed 's/".*$//'`
+for page_sufix in  `curl http://www.wizards.com/magic/magazine/downloads.aspx?x=mtg/daily/downloads/wallpapers |grep href | grep /magic/magazine/article.aspx | sed 's/^.*<a href="//' | sed 's/".*$//'`
 do
 	echo $page_sufix
 	cd paginas
